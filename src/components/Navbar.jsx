@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import '../styles/Navbar.css';
-import LoginPopup from './Loginpopup';
+import LoginPopup from './LoginPopup';
 
 function Navbar() {
   const [showLogin, setShowLogin] = useState(false);

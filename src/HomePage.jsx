@@ -8,7 +8,8 @@ import Team from './components/Team';
 
 import ContactPage from './components/ContactPage';
 import BackToTopButton from './components/Layout';
-import LoginPopup from './components/Loginpopup';
+import LoginPopup from './components/LoginPopup';
+
 import Testimonials from './components/Testimonials';
 
 import Pricing from './components/Pricing';
