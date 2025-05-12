@@ -1,0 +1,213 @@
+.about-us-section {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .about-left .about-img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+  .about-right {
+    flex: 1;
+  }
+  
+  .skill {
+    margin-bottom: 1rem;
+  }
+  
+  .label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+  }
+  
+  .bar {
+    background: #eee;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .fill {
+    background: #ff5c5c;
+    height: 100%;
+  }
+  
+  .about-header {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .about-header .add-btn {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+  }
+  
+  .feature-card {
+    background: #ffe0fa;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .feature-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .feature-actions button {
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  
+  .feature-actions button:nth-child(1) {
+    background: #28a745;
+    color: white;
+  }
+  
+  .feature-actions button:nth-child(2) {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .feature-actions button:nth-child(3) {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .popup-img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .popup-content input,
+  .popup-content textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+  }
+  .skill {
+    margin-bottom: 1rem;
+  }
+  .skill .label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  .skill .bar {
+    background: #eee;
+    height: 8px;
+    border-radius: 4px;
+    margin: 4px 0;
+  }
+  .skill .fill {
+    background: #f3919c;
+    height: 100%;
+    border-radius: 4px;
+  }
+  .skill-actions button {
+    margin-right: 8px;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  .skill-form {
+    margin-top: 1rem;
+  }
+  .skill-form input {
+    margin-right: 10px;
+    padding: 6px;
+  }
+  .skill-form button {
+    padding: 6px 12px;
+    background: #ff4c60;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .about-img-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .about-img {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .change-img-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.9;
+  }
+  
+  .change-img-btn:hover {
+    background-color: #0056b3;
+    opacity: 1;
+  }
+  
+  
+  

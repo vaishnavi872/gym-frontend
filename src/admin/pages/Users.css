@@ -1,0 +1,35 @@
+/* Users.css */
+.edit-modal {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    background-color: #f9f9f9;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .error {
+    border: 1px solid red;
+    background-color: #ffe6e6;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 12px;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  

@@ -1,0 +1,99 @@
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+    z-index: -1;
+  }
+  
+  .hero-content {
+    position: relative;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding: 0 20px;
+  }
+  
+  .hero-content h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+  
+  .hero-content h1 span {
+    color: var(--primary-color);
+  }
+  
+  .hero-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: rgb(211, 124, 108);
+  }
+  .hero-content {
+    animation: fadeInUp 1.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .become-member-btn {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e94e1b; /* Gym-style orange */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .become-member-btn:hover {
+    background-color: #c43d14;
+    transform: scale(1.05);
+  }
+  
+  

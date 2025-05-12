@@ -1,0 +1,150 @@
+.contact-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .map-container {
+    flex: 1 1 50%;
+    min-height: 400px;
+  }
+  
+  .form-container {
+    flex: 1 1 40%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input.error,
+  .contact-form textarea.error {
+    border: 2px solid rgb(236, 64, 64);
+  }
+  
+  
+  .input-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-row input {
+    flex: 2 ;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px; /* Add space between fields */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #ec6756;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e03d29;
+  }
+  .success-message {
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+    animation: fadeIn 0.3s ease-in;
+  }
+  input.error,
+textarea.error {
+  border: 2px solid red;
+}
+
+input.error::placeholder,
+textarea.error::placeholder {
+  color: red;
+}
+.faq-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4885c7;
+  color: white;
+  border: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.accordion-button:hover {
+  background-color: #0056b3;
+}
+
+.accordion-content {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.accordion-content p {
+  margin: 0;
+}
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ccc;
+  border-top: 3px solid #333;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  

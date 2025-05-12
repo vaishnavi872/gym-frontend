@@ -1,0 +1,54 @@
+.payment-page {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .payment-page h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .payment-page p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .payment-page ul {
+    text-align: left;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 30px;
+  }
+  
+  .payment-page ul li {
+    background: #f2f2f2;
+    padding: 10px 15px;
+    margin: 6px 0;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .pay-now-btn {
+    padding: 12px 28px;
+    font-size: 16px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .pay-now-btn:hover {
+    background-color: #d64500;
+  }
+  

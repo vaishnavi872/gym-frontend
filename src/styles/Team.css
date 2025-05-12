@@ -1,0 +1,83 @@
+.team-section {
+  padding: 60px 20px;
+  background: #f8f8f8;
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-header h5 {
+  color: orangered;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.team-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* Horizontal scroll list */
+.team-sidebar {
+  overflow-x: auto;
+}
+
+.team-list {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.team-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.team-list::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+/* Card styling */
+.team-card {
+  flex: 0 0 auto;
+  width: 220px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.trainer-info {
+  padding: 15px;
+}
+
+.trainer-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+.trainer-info p {
+  color: #777;
+  font-size: 14px;
+}

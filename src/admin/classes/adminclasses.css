@@ -1,0 +1,222 @@
+/* add classes */
+.classes-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+.classes-header {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-right: 140px; /* create space for the button */
+}
+
+.classes-header h2 {
+  font-size: 1.8rem;
+  color: #e74c3c;
+  margin: 0;
+}
+
+.add-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+  
+/* ClassesList */
+.classes-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.classes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #d94f4f;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  background-color: #007bff;
+  color: white;
+  padding: 4px 4px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+}
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.class-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.class-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.class-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-btn {
+  background-color: gold;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #000;
+  font-weight: bold;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+.schedule-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.schedule-tabs button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.schedule-tabs .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.schedule-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.schedule-inputs input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.schedule-inputs button {
+  background-color: #87cefa;
+  color: black;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #aaa;
+}
+
+.schedule-table th {
+  background-color: #555;
+  color: white;
+}
+
+  /* edit classes */
+  .edit-btn,
+  .delete-btn {
+    padding: 0.3rem 0.7rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #f1c40f;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  .class-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin-top: 1rem;
+  }
+  
+  .class-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  
+  .class-form input,
+  .class-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .save-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  

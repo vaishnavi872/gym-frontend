@@ -1,0 +1,79 @@
+.navbar {
+  background: black;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.logo span {
+  color: #d83f19;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: tomato;
+}
+
+/* Add these to your existing Navbar.css */
+.login-btn, .signup-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background-color: transparent;
+  border: 1px solid #f82323;
+  color: #f0e4e4;
+}
+
+.login-btn:hover {
+  background-color: rgb(248, 64, 32);
+}
+
+.signup-btn {
+  background-color: #ff6347; /* Tomato color */
+  border: 1px solid #ff6347;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #e5533d;
+  border-color: #e5533d;
+}

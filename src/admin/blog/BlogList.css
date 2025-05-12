@@ -1,0 +1,104 @@
+.blog-container {
+    padding: 1.5rem;
+  }
+  
+  .blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .add-blog-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .add-blog-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .blog-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .blog-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-post-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .blog-meta {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .blog-snippet {
+    margin-top: 0.5rem;
+    color: #374151;
+  }
+  
+  .blog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .edit-button {
+    background-color: #f59e0b;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #d97706;
+  }
+  
+  .delete-button {
+    background-color: #dc2626;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #b91c1c;
+  }
+  

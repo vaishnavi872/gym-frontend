@@ -1,0 +1,145 @@
+.program-details {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #d1d0d0;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  .program-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ec341f;
+  }
+  
+  .program-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .program-details li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  .schedule-table-section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .schedule-table th, .schedule-table td {
+    border: 1px solid #fffcfc;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .schedule-table th {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(14, 13, 13);
+  }
+  .schedule-table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .schedule-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .testimonials {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .testimonials h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #e74c3c;
+  }
+  
+  .testimonial-card {
+    background-color: #fff;
+    border-left: 5px solid #e74c3c;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+  
+  .testimonial-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card span {
+    font-weight: bold;
+    color: #333;
+  }
+  .cta-section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    color: white;
+    border-radius: 10px;
+    max-width: 800px;
+  }
+  
+  .join-now-btn {
+    margin-top: 15px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .join-now-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    background: #f3f3f3;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 0 15px;
+    background-color: #fff;
+  }
+  
+  .faq-answer.active {
+    max-height: 200px;
+    padding: 15px;
+  }
+  
+    

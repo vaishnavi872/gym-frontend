@@ -1,0 +1,137 @@
+.footer-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 1rem 0;
+    font-family: Arial, sans-serif;
+  }
+  .contact-link {
+    color: #ffffff; /* Change this to your desired color */
+    text-decoration: none; /* Optional: to remove underline */
+  }
+  
+  .contact-link:hover {
+    color: #e64a19; /* Optional: different color on hover */
+  }
+  
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .footer-links h2,
+  .footer-newsletter h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f83535;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li:hover {
+    color: #ff6b6b;
+  }
+  .footer-socials a {
+    color: #fff; /* Default color */
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .footer-socials a:hover {
+    color: #f44a4a; /* Hover color, e.g., red or brand color */
+  }
+  
+  .footer-socials i.fa-facebook-f:hover {
+    color: #3b5998; /* Facebook Blue */
+  }
+  
+  .footer-socials i.fa-instagram:hover {
+    color: #eb637c; /* Instagram Pink */
+  }
+  
+  .footer-socials i.fa-twitter:hover {
+    color: #1da1f2; /* Twitter Blue */
+  }
+  
+  .footer-socials i.fa-linkedin-in:hover {
+    color: #0077b5; /* LinkedIn Blue */
+  }
+  
+  
+  .footer-newsletter p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    gap: 10px; /* Add space between input and button */
+    margin-top: 15px; /* Optional: space above the whole form */
+  }
+  
+  .newsletter-form input {
+    flex: 1; /* Make the input grow to fill space */
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d83a16;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #f06b4d;
+  }
+  
+  .newsletter-form input.error {
+    border: 2px solid rgb(201, 62, 62);
+  }
+  
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .success-msg {
+    color: #f3390a;
+    margin-top: 10px;
+    font-size: 14px;
+
+  }
+  
+  
+  @media (max-width: 760px) {
+    .footer-content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .newsletter-form input {
+      width: 100%;
+    }
+  }

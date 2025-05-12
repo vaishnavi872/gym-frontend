@@ -1,0 +1,101 @@
+.yoga-container {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .yoga-container h1 {
+    font-size: 3rem;
+    color: #4a4a4a;
+  }
+  
+  .join-now-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    margin: 20px 0;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .yoga-schedule table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .yoga-schedule th, .yoga-schedule td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .yoga-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .yoga-benefits li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .trainer-section img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  
+  .testimonials {
+    margin-top: 40px;
+  }
+  
+  .testimonial {
+    background: white;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-section {
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: left;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  .faq-question {
+    width: 100%;
+    background: #f4f4f4;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+    background: #fafafa;
+  }
+  
+  .faq-answer.active {
+    max-height: 200px; /* Adjust as needed */
+    padding: 15px;
+  }
+  
