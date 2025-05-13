@@ -1,15 +1,17 @@
+/* === DESKTOP STYLES === */
 .navbar {
   background: black;
   padding: 10px 0;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100%; /* Changed from 1475px to responsive */
   z-index: 1000;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -28,6 +30,7 @@
   display: flex;
   align-items: center;
   margin-right: 40px;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .nav-links li {
@@ -47,8 +50,8 @@
   color: tomato;
 }
 
-/* Add these to your existing Navbar.css */
-.login-btn, .signup-btn {
+.login-btn,
+.signup-btn {
   padding: 8px 16px;
   border-radius: 4px;
   font-weight: bold;
@@ -68,7 +71,7 @@
 }
 
 .signup-btn {
-  background-color: #ff6347; /* Tomato color */
+  background-color: #ff6347;
   border: 1px solid #ff6347;
   color: white;
 }
@@ -76,4 +79,49 @@
 .signup-btn:hover {
   background-color: #e5533d;
   border-color: #e5533d;
+}
+
+/* === HAMBURGER === */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  background: none;
+  border: none;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+/* === MOBILE STYLES === */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-links.open {
+    max-height: 500px;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .login-btn,
+  .signup-btn {
+    width: 80%;
+    text-align: center;
+    margin: 1rem 0;
+  }
 }

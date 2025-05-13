@@ -28,7 +28,7 @@
   }
   
   .pricing-card.popular {
-    border: 3px solid #ff5733;
+    border: 2px solid #ff5733;
   }
   
   .pricing-card:hover {
@@ -37,7 +37,7 @@
   
   .pricing-card .badge {
     position: absolute;
-    top: -15px;
+    top: -0.53px;
     left: 50%;
     transform: translateX(-50%);
     background: #ff5733;

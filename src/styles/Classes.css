@@ -1,3 +1,9 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+
 /* Overall section styling */
 .classes-section {
   padding: 60px 20px;
@@ -27,19 +33,26 @@
   color: #ff6b6b;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 2px 500px;
+ 
+}
+
+
+.ourcls{
+  text-align: center;
 }
 
 
 /* Horizontal scroll container */
 .classes-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   flex-wrap: nowrap;             /* Ensures one row */
   gap: 30px;
   overflow-x: auto;              /* Enables horizontal scroll */
   padding: 10px 20px;
   scroll-behavior: smooth;
-  scrollbar-width: thin;
+  /* scrollbar-width: thin; */
 }
 
 

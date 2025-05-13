@@ -95,5 +95,44 @@
     background-color: #c43d14;
     transform: scale(1.05);
   }
-  
+  /* === EXISTING STYLES (KEEP AS IS) === */
+/* ... your existing styles ... */
+
+/* === RESPONSIVE STYLES === */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h4 {
+    font-size: 1rem;
+  }
+
+  .become-member-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .hero-content {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-content h4 {
+    font-size: 0.9rem;
+  }
+
+  .become-member-btn {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+}
+
   

@@ -7,12 +7,13 @@ import LoginPopup from './LoginPopup';
 function Navbar() {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (location.pathname !== '/') return; // Run only on homepage
+      if (location.pathname !== '/') return;
 
       const sections = document.querySelectorAll('section');
       const navLinks = document.querySelectorAll('.nav-links a');
@@ -37,11 +38,19 @@ function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [location.pathname]);
 
+  // Close menu on route change
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
+
   return (
     <>
       <nav className="navbar">
         <div className="logo">FITNESS <span>STUDIO</span></div>
-        <ul className="nav-links">
+        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </button>
+        <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li><HashLink smooth to="/#home">HOME</HashLink></li>
           <li><Link to="/about">ABOUT</Link></li>
           <li><Link to="/classes">CLASSES</Link></li>

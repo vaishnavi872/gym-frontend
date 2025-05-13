@@ -75,7 +75,7 @@ const ClassesList = () => {
   };
 
   return (
-    <div className="classes-list">
+    <div className="classes-list-ad">
       <div className="classes-header">
         <h2>Manage Classes</h2>
         <Link to="/admin/classes/add" className="add-button">+ Add Class</Link>

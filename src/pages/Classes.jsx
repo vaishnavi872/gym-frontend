@@ -12,10 +12,14 @@ const Classes = () => {
     <Layout >
     <section className="classes-section" id="classes">
       <div className="classes-header" data-aos="flip-up" data-aos-duration="4000">
-        <h5>OUR CLASSES</h5>
-        <h2>CHOOSE OUR PROGRAMS</h2>
+       
+        <h2 className='helloheader'>CHOOSE OUR PROGRAMS</h2>
       </div>
-      <div className="classes-list">
+      <div>
+     
+      <h5  className='ourcls'>OUR CLASSES</h5>
+      </div>
+      <div className="classes-list" >
         {classesData.map((cls, index) => (
           <div
             className="class-card"
