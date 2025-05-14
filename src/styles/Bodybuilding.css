@@ -114,7 +114,7 @@
   
   .faq-item {
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ececee;
     border-radius: 5px;
     overflow: hidden;
   }
@@ -122,7 +122,7 @@
   .faq-question {
     width: 100%;
     text-align: left;
-    background: #f3f3f3;
+    background: #7a78eb;
     border: none;
     padding: 15px;
     font-weight: bold;

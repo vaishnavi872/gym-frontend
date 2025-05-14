@@ -78,8 +78,8 @@
   font-weight: bold;
   border: none;
   position: absolute;
-  top: 20px; /* adjust as needed for spacing from top */
-  left: 60%;
+  top: 90px; /* adjust as needed for spacing from top */
+  right: 25%;
 }
 
 .classes-grid {
