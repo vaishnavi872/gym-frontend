@@ -47,7 +47,10 @@ function Navbar() {
           <li><Link to="/classes">CLASSES</Link></li>
           <li><Link to="/services">SERVICES</Link></li>
           <li><Link to="/our-blog">OUR BLOG</Link></li>
+                <li> <HashLink smooth to="/#reviews">REVIEWS</HashLink></li>
           <li><HashLink smooth to="/#contact">CONTACT</HashLink></li>
+   
+
           <li>
             <button className="login-btn" onClick={() => setShowLogin(true)}>SIGN IN</button>
           </li>

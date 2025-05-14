@@ -24,14 +24,15 @@
 /* Horizontal scroll list */
 .team-sidebar {
   overflow-x: auto;
+  padding: 10px;
+  width: 100%;
 }
 
 .team-list {
   display: flex;
   gap: 20px;
+  min-width: max-content; /* ⬅️ ensures contents can overflow and scroll */
   padding-bottom: 10px;
-  scrollbar-width: thin;
-  scrollbar-color: #ccc transparent;
 }
 
 .team-list::-webkit-scrollbar {

@@ -17,6 +17,9 @@ import About from './pages/About';
 import Classes from './pages/Classes';
 import Payment from './pages/Payment';
 import BlogDetails from './pages/BlogDetails';
+import Reviews from "./components/Reviews/Reviews";
+
+
 // Admin Panel
 import AdminApp from './admin/AdminApp';
 
@@ -42,7 +45,7 @@ function App() {
       <Route path="/classes" element={<Classes />} />
       <Route path="/services" element={<Services />} />      
       <Route path="/payment" element={<Payment />} />           
-       
+       <Route path="/reviews" element={<Reviews />} />
        {/* Admin Panel Routes */}
       <Route path="/admin/*" element={<AdminApp />} />
     </Routes>

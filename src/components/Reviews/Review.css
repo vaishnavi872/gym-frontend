@@ -1,0 +1,78 @@
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.review-form button {
+  padding: 10px;
+  background-color: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: #e74c3c;
+}
+
+/*review list*/
+
+.review-list {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.review-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-rating {
+  font-size: 1.2rem;
+  color: #f39c12;
+  margin: 5px 0;
+}
+
+.review-comment {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.no-reviews {
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
