@@ -9,7 +9,7 @@ const Blog = () => {
   return (
     <Layout>
     <div className="blog-container">
-      <h1>Our Blog</h1>
+      <h2>Our Blog</h2>
       <div className="blog-list">
         {blogs.map((blog, index) => (
           <BlogCard key={index} {...blog} />

@@ -1,40 +1,55 @@
-/* add classes */
-.classes-list {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  overflow-x: auto;
-  padding: 20px;
-  scroll-behavior: smooth;
-}
-.classes-header {
-  position: relative;
-  margin-bottom: 2rem;
-  padding-right: 140px; /* create space for the button */
-}
+/* adminclasses.css */
 
-.classes-header h2 {
-  font-size: 1.8rem;
-  color: #e74c3c;
-  margin: 0;
-}
-
-.add-button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: #007bff;
-  color: white;
-  padding: 0.5rem 1rem;
+.add-class {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
   border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.add-button:hover {
+.add-class h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  color: #333;
+}
+
+.add-class form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-class input,
+.add-class textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-class button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-class button:hover {
   background-color: #0056b3;
 }
+
+.add-class hr {
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
 
   
 /* ClassesList */
@@ -55,13 +70,16 @@
 }
 
 .add-button {
-  background-color: #007bff;
+  background-color: #1100ff;
   color: white;
   padding: 4px 4px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   border: none;
+  position: absolute;
+  top: 20px; /* adjust as needed for spacing from top */
+  left: 60%;
 }
 
 .classes-grid {

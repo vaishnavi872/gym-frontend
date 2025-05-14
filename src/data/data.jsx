@@ -127,9 +127,7 @@ export const pricingPlans = [
     { name: "Bret D. Bowers", role: "Advanced Training Specialist", image: "/images/trainer4.jpg" },
     { name: "Boyd C. Harris", role: "Body Building Coach", image: "/images/trainer5.jpg" },
     { name: "Emily J. Brown", role: "Strength Training Coach", image: "/images/trainer6.jpg" },
-    { name: "Laura K. Dean", role: "Weight Loss Trainer", image: "/images/trainer7.jpg" },
-    { name: "Chris R. Bryant", role: "Cardio Trainer", image: "/images/trainer8.jpg" },
-    { name: "Natalie R. Clark", role: "CrossFit Session Coach", image: "/images/trainer9.jpg" },
+    
   ];
   export const featureDetails = {
     equipment: {

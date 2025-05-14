@@ -4,8 +4,9 @@
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 1rem 0;
+    padding: 3rem 0;
     font-family: Arial, sans-serif;
+    padding-top: 3rem;     
   }
   .contact-link {
     color: #ffffff; /* Change this to your desired color */
@@ -20,9 +21,10 @@
   .footer-content {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    max-width: 2300px;
+    margin: 0 1auto;
+    padding: 2rem 4rem;
+
   }
   
   .footer-links h2,
