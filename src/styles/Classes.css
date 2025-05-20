@@ -19,13 +19,16 @@
   padding-bottom: 30px;
 }
 
-.classes-header h5 {
-  font-size: 16px;
-  color: #ff6b6b;
-  font-weight: 600;
-  letter-spacing: 2px;
+.ourcls {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e1e1e; /* Dark gray */
+  text-align: center;
+  margin-top: -4px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif; /* You can customize this */
 }
 
 .classes-header h2 {
@@ -35,6 +38,7 @@
   text-transform: uppercase;
   padding: 2px 500px;
   text-align: center;
+  margin-top: 0px;
 }
 
 

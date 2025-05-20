@@ -1,0 +1,137 @@
+.cart-page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cart-item img {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+  margin-right: 1rem;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+  flex: 1;                  /* fill remaining space */
+  gap: 1rem;                /* spacing between columns */
+}
+.item-details h4 {
+  margin: 0;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.item-details .price,
+.item-details .quantity {
+  font-size: 0.9rem;
+  color: #555;
+  white-space: nowrap;
+}
+
+.item-details button {
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+/* each "cell" can flex or shrink */
+.item-details .cell {
+  white-space: nowrap;
+}
+
+/* name takes up whatever space remains */
+.item-details .cell.name {
+  flex: 2;                  /* grow more */
+  font-weight: 600;
+}
+
+/* price and qty get just their intrinsic width */
+.item-details .cell.price,
+.item-details .cell.qty {
+  flex: 0 0 auto;
+  color: #555;
+}
+
+/* action cell right‑aligns its button */
+.item-details .cell.action {
+  flex: 0 0 auto;
+}
+
+.item-details .cell.action button {
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.item-details .cell.action button:hover {
+  background-color: #e84118;
+}
+.item-details button:hover {
+  background-color: #e84118;
+}
+
+.cart-summary {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  text-align: right;
+  font-weight: bold;
+}
+/* inside CartPage.css */
+.item-details {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 1.5rem;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #e0e0e0;
+  font-size: 1.2rem;
+  line-height: 1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.qty-btn:hover {
+  background: #d0d0d0;
+}
+
+.qty-value {
+  min-width: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+

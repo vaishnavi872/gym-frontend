@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import HomePage from './HomePage';
 import Membership from './components/Membership';
@@ -18,38 +18,41 @@ import Classes from './pages/Classes';
 import Payment from './pages/Payment';
 import BlogDetails from './pages/BlogDetails';
 import Reviews from "./components/Reviews/Reviews";
+import CartPage from './pages/CartPage'; 
 
+import 'react-toastify/dist/ReactToastify.css';
 
 // Admin Panel
 import AdminApp from './admin/AdminApp';
 
 function App() {
   return (
+  
+      <Routes>
+        {/* Main Website Routes */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/membership" element={<Membership />} />
+        <Route path="/equipment" element={<EquipmentPage />} />
+        <Route path="/nutrition" element={<NutritionPage />} />
+        <Route path="/training-plan" element={<TrainingPlanPage />} />
+        <Route path="/custom-plan" element={<CustomPlanPage />} />
+        <Route path="/bodybuilding" element={<Bodybuilding />} />
+        <Route path="/signup" element={<SignupPopup />} />
+        <Route path="/yoga" element={<YogaPage />} />
+        <Route path="/cardio" element={<Cardio />} />
+        <Route path="/our-blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />     
+        <Route path="/about" element={<About />} />
+        <Route path="/classes" element={<Classes />} />
+        <Route path="/services" element={<Services />} />      
+        <Route path="/payment" element={<Payment />} />           
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/cart" element={<CartPage />} />
+        {/* Admin Panel Routes */}
+        <Route path="/admin/*" element={<AdminApp />} />
+      </Routes>
 
-    <Routes>
-     {/* Main Website Routes */}
-      <Route path="/" element={<HomePage />} />
-      <Route path="/membership" element={<Membership />} />
-      <Route path="/equipment" element={<EquipmentPage />} />
-      <Route path="/nutrition" element={<NutritionPage />} />
-      <Route path="/training-plan" element={<TrainingPlanPage />} />
-      <Route path="/custom-plan" element={<CustomPlanPage />} />
-      <Route path="/bodybuilding" element={<Bodybuilding />} />
-      <Route path="/signup" element={<SignupPopup />} />
-      <Route path="/yoga" element={<YogaPage />} />
-      <Route path="/cardio" element={<Cardio />} />
-      <Route path="/our-blog" element={<Blog />} />
-
-      <Route path="/blog/:id" element={<BlogDetails />} />     
-      <Route path="/about" element={<About />} />
-      <Route path="/classes" element={<Classes />} />
-      <Route path="/services" element={<Services />} />      
-      <Route path="/payment" element={<Payment />} />           
-       <Route path="/reviews" element={<Reviews />} />
-       {/* Admin Panel Routes */}
-      <Route path="/admin/*" element={<AdminApp />} />
-    </Routes>
-
+ 
   );
 }
 

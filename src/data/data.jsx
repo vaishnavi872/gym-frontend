@@ -5,6 +5,7 @@ import customImg from '../assets/custom.jpg';
 import yogaImg from '../assets/yoga.jpg';
 import cardioImg from '../assets/cardio.jpg'; 
 
+
 export const pricingPlans = [
     {
       title: "Basic Plan",
@@ -236,5 +237,33 @@ export const socialLinks = [
     }
   ];
   // admin/classes/classService.js
+
+
+
+
+export const products = [
+  {
+    id: 1,
+    name: "Whey Protein",
+    image: "/assets/wheyProtein.jpg",     
+    price:  39.99,
+    description: "High-quality whey protein for muscle recovery.",
+  },
+  {
+    id: 2,
+    name: "Creatine Monohydrate",
+    image: "/assets/creatine.jpg",  
+    price: 24.99,
+    description: "Boost strength and performance.",
+  },
+  {
+    id: 3,
+    name: "Yoga Mat",
+    image: "/assets/yoga-mat.jpg",
+    
+    price: 14.99,
+    description: "Comfortable and durable yoga mat for daily practice.",
+  },
+];
 
 

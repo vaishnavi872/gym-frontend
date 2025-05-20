@@ -14,7 +14,7 @@ const Sidebar = () => {
           <li><Link to="/admin/services">Services</Link></li>
           <li><Link to="/admin/classes">Classes</Link></li>
         <li>  <Link to="/admin/about">About</Link></li>
-
+<li>  <Link to="/admin/products">Product</Link></li>
           {/* More links to Users, Trainers, etc. later */}
         </ul>
       </nav>

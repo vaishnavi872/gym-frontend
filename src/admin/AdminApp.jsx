@@ -15,12 +15,17 @@ import ClassesList from './classes/ClassesList';
 import AddClass from './classes/AddClass';
 import EditClass from './classes/EditClass';
 import About from "./about/About";
+import ProductManagement from './ProductManagement';
+import AddProduct from './components/AddProduct';
+import EditProduct from './components/EditProduct';
+import ProductProvider from "./context/ProductContext";
 const AdminApp = () => {
   return (
 
     <div className="admin-panel">
       <Sidebar />
       <div className="admin-content">
+        <ProductProvider>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/users" element={<Users />} />
@@ -34,9 +39,13 @@ const AdminApp = () => {
           <Route path="classes/add" element={<AddClass />} />
           <Route path="classes/edit/:id" element={<EditClass />} />
           <Route path="/About" element={<About />} />
+               <Route path="/products" element={<ProductManagement />} />
+      <Route path="/products/add" element={<AddProduct />} />
+      <Route path="/products/edit/:id" element={<EditProduct />} />
 
           {/* More admin routes will go here later */}
         </Routes>
+        </ProductProvider>
       </div>
     </div>
 

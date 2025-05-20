@@ -4,9 +4,12 @@ import { HashLink } from 'react-router-hash-link';
 import '../styles/Navbar.css';
 import LoginPopup from './LoginPopup';
 
+import { useCart } from '../context/CartContext'; 
+
 function Navbar() {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
+    const { cartItems } = useCart();
 
   const location = useLocation();
 
@@ -49,7 +52,12 @@ function Navbar() {
           <li><Link to="/our-blog">OUR BLOG</Link></li>
                 <li> <HashLink smooth to="/#reviews">REVIEWS</HashLink></li>
           <li><HashLink smooth to="/#contact">CONTACT</HashLink></li>
-   
+           <Link to="/cart" className="cart-icon">
+        <i className="fas fa-shopping-cart"></i>
+        {cartItems.length > 0 && (
+          <span className="cart-count">{cartItems.length}</span>
+        )}
+      </Link>
 
           <li>
             <button className="login-btn" onClick={() => setShowLogin(true)}>SIGN IN</button>

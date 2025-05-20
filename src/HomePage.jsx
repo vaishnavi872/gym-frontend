@@ -5,13 +5,13 @@ import Team from './components/Team';
 import ContactPage from './components/ContactPage';
 import BackToTopButton from './components/Layout';
 import LoginPopup from './components/LoginPopup';
-import Testimonials from './components/Testimonials';
+import Testimonials from "./components/Testimonials"; // ✅ correct
 import Pricing from './components/Pricing';
 
 import ReviewForm from './components/Reviews/ReviewForm';
 import ReviewList from './components/Reviews/ReviewList';
 import './components/Reviews/Review.css'; // Optional: only if you use external styles
-
+import Products from './pages/Products';
 function HomePage() {
   const [showLogin, setShowLogin] = useState(false);
   const [reviews, setReviews] = useState([]);
@@ -31,6 +31,10 @@ function HomePage() {
       <section id="pricing">
         <Pricing />
       </section>
+
+         <section id="products" >
+         <Products />
+         </section>
 
       <section id="Testimonials">
         <Testimonials />
